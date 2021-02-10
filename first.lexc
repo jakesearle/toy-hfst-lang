@@ -1,0 +1,129 @@
+Multichar_Symbols
++V +V_suff +Inf +V_td +1P +2P +3P +Sg +Pl +Form +Inform 
++ADJ +ADJ_suff 
++Def_Art +Ind_Art +No_Art +Def_Art_Suff +Ind_Art_Suff +No_Art_Suff
++Mas +Neu +Fem +Plu 
++Nom +Acc +Dat +Gen
+
+! Lexicon containing lexical stems:
+LEXICON Root
+antwort V_td "Answer";
+arbeit V_td "Work" ;
+frag V "Ask" ;
+glaub V "Believe" ;
+leb V "Live" ;
+lern V "Learn" ;
+mach V "Make; Do" ;
+red V_td "Speak" ;
+sag V "Say" ;
+spiel V "Play" ;
+
+alt ADJ "Old" ;
+billig ADJ "Cheap" ;
+breit ADJ "Wide; broad";
+lang ADJ "long" ;
+schwer ADJ "heavy" ;
+leicht ADJ "light" ;
+dick ADJ "thick" ;
+eng ADJ "narrow" ;
+hell ADJ "bright" ;
+naß ADJ "wet" ;
+
+! Lexicon conatining POS tag only
+LEXICON V
++V:V_suff ;
+
+! Lexicon for regular endings
+LEXICON V_suff
++Inf:en          # ;
++1P+Sg:e         # ;
++1P+Pl:en        # ;
++2P+Sg+Inform:st # ;
++2P+Sg+Form:en   # ;
++2P+Pl+Inform:t  # ;
++2P+Pl+Form:en   # ;
++3P+Sg:t         # ;
++3P+Pl:en        # ;
+
+! Vowels ending in -t or -d
+LEXICON V_td
++V+Inf:en           # ;
++V+1P+Sg:e          # ;
++V+1P+Pl:en         # ;
++V+2P+Sg+Inform:est # ;
++V+2P+Sg+Form:en    # ;
++V+2P+Pl+Inform:et  # ;
++V+2P+Pl+Form:en    # ;
++V+3P+Sg:et         # ;
++V+3P+Pl:en         # ;
+
+LEXICON ADJ
++ADJ:ADJ_suff ;
+
+LEXICON ADJ_suff
++Def_Art:Def_Art_Suff ;
++Ind_Art:Ind_Art_Suff ;
++No_Art:No_Art_Suff ;
+
+LEXICON Def_Art_Suff
++Mas+Nom:e # ;
++Mas+Acc:en # ;
++Mas+Dat:en # ;
++Mas+Gen:en # ;
+
++Neu+Nom:e # ;
++Neu+Acc:e # ;
++Neu+Dat:en # ;
++Neu+Gen:en # ;
+
++Fem+Nom:e # ;
++Fem+Acc:e # ;
++Fem+Dat:en # ;
++Fem+Gen:en # ;
+
++Plu+Nom:en # ;
++Plu+Acc:en # ;
++Plu+Dat:en # ;
++Plu+Gen:en # ;
+
+LEXICON Ind_Art_Suff
++Mas+Nom:er # ;
++Mas+Acc:en # ;
++Mas+Dat:en # ;
++Mas+Gen:en # ;
+
++Neu+Nom:es # ;
++Neu+Acc:es # ;
++Neu+Dat:en # ;
++Neu+Gen:es # ;
+
++Fem+Nom:e # ;
++Fem+Acc:e # ;
++Fem+Dat:en # ;
++Fem+Gen:en # ;
+
++Plu+Nom:e # ;
++Plu+Acc:e # ;
++Plu+Dat:en # ;
++Plu+Gen:er # ;
+
+LEXICON No_Art_Suff
++Mas+Nom:er # ;
++Mas+Acc:en # ;
++Mas+Dat:em # ;
++Mas+Gen:en # ;
+
++Neu+Nom:es # ;
++Neu+Acc:es # ;
++Neu+Dat:em # ;
++Neu+Gen:en # ;
+
++Fem+Nom:e # ;
++Fem+Acc:e # ;
++Fem+Dat:er # ;
++Fem+Gen:er # ;
+
++Plu+Nom:e # ;
++Plu+Acc:e # ;
++Plu+Dat:en # ;
++Plu+Gen:er # ;
